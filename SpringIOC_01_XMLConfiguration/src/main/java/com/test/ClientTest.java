@@ -17,7 +17,9 @@ public class ClientTest {
 		System.out.println(student);
 		System.out.println(student.getAddress());
 		System.out.println(student.getAddress().getLandmark());
+		System.out.println(student.getAddress().getLandname());
 		System.out.println(student.getMobileNos());
+		System.out.println(student.getCourses());
 		System.out.println(student.getAge());
 		
 		System.out.println("================ car");
@@ -29,6 +31,11 @@ public class ClientTest {
 		
 		Car car1= (Car) ctx.getBean("car1");
 		car1.printData();
+		
+        System.out.println("================ car2");
+		
+		Car car2= (Car) ctx.getBean("car2");
+		car2.printData();
 		
 		
 	}

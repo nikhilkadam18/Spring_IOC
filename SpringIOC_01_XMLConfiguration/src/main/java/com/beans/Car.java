@@ -23,10 +23,16 @@ public class Car {
 		this.make = make;
 	}
 	
-	
+	public Car(String make, String color, int year) {
+		super();
+		this.make = make;
+		this.color = color;
+		this.year = year;
+	}
+
 	public void printData(){
-		System.out.println(color);
 		System.out.println(make);
+		System.out.println(color);
 		System.out.println(year);
 	}
 
