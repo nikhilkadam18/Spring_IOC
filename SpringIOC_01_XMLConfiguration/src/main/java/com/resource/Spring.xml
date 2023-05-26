@@ -52,5 +52,10 @@
 		<constructor-arg type="String" value="blue"/>
 	</bean>
 	
+	<bean id="p1" class="com.beans.Pepsi">
+	    <property name="prize" value="5"/>
+	
+	</bean>
+	
 
 </beans>

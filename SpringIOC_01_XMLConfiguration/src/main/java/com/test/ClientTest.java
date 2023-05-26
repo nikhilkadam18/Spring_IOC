@@ -6,6 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.beans.Address;
 import com.beans.Car;
+import com.beans.Pepsi;
 import com.beans.Student;
 
 public class ClientTest {
@@ -40,5 +41,10 @@ public class ClientTest {
 		
 		//registering shutdown hook
 		ctx.registerShutdownHook();
+		
+		System.out.println("++++++++++++++++++++++++++++++++");
+		
+		Pepsi p1 =(Pepsi) ctx.getBean("p1");
+		System.out.println(p1);
 	}
 }
