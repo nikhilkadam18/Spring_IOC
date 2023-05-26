@@ -13,7 +13,7 @@
 	<bean id="address" class="com.beans.Address"
 		p:landmark="sangli-pune" p:landname="Om developers"/>
 
-	<bean id="stu" class="com.beans.Student" scope="singleton">
+	<bean id="stu" class="com.beans.Student" scope="singleton" init-method="init" destroy-method="destroy">
 		<property name="age" value="33"></property>
 		
 		<property name="address">
@@ -37,8 +37,8 @@
 	</bean>
 
 	<bean id="car" class="com.beans.Car">
-		<constructor-arg index="0" value="red" />
-		<constructor-arg index="1" value="BMW" />
+		<constructor-arg index="1" value="red" />
+		<constructor-arg index="0" value="BMW" />
 	</bean>
 
 	<bean id="car1" class="com.beans.Car">
@@ -51,5 +51,6 @@
 		<constructor-arg type="int" value="5000" />
 		<constructor-arg type="String" value="blue"/>
 	</bean>
+	
 
 </beans>

@@ -1,6 +1,7 @@
 package com.test;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.beans.Address;
@@ -11,7 +12,7 @@ public class ClientTest {
 
 	public static void main(String[] args) {
 
-		ApplicationContext ctx = new ClassPathXmlApplicationContext("com/resource/Spring.xml");
+		AbstractApplicationContext ctx = new ClassPathXmlApplicationContext("com/resource/Spring.xml");
 		Student student = (Student) ctx.getBean("stu");
 		
 		System.out.println(student);
@@ -37,6 +38,7 @@ public class ClientTest {
 		Car car2= (Car) ctx.getBean("car2");
 		car2.printData();
 		
-		
+		//registering shutdown hook
+		ctx.registerShutdownHook();
 	}
 }
