@@ -12,6 +12,13 @@ https://docs.google.com/document/d/1_Je45_6G2kP2XWU2pOBYOidMkfaX1Wpj/edit
  # This two interface is used to implmenting bean life cycle 
       1)InitializingBean interface
       2)DisposableBean interface
+      
+ # Bean Scope:
+     1) Singleton
+     2) prototype
+     3) request
+     4) session
+     5) globalsession
   
  # Implmenting bean life cycle Using Annotations
      1) @PostConstruct
