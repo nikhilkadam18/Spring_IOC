@@ -16,3 +16,11 @@ https://docs.google.com/document/d/1_Je45_6G2kP2XWU2pOBYOidMkfaX1Wpj/edit
  # Implmenting bean life cycle Using Annotations
    @PostConstruct
    @PreDestroy   (but upto java 1.8 they are used after that add dependancies)
+   
+ # Annotations for Autowiring:
+  1)@Autowired
+  2)@Qualifier
+  
+ # Stereotype Annotations:
+    1)@Component
+    2)@Value
